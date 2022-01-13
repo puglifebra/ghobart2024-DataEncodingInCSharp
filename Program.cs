@@ -6,7 +6,12 @@ namespace ghobart2024_DataEncodingInCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Cipher cipher;
+            cipher = new Cipher(5);
+
+            string encrypted;
+            encrypted = cipher.Encrypt("rosebud");
+            Console.WriteLine($"The encrypted message is: '{encrypted}'");
         }
     }
 }
